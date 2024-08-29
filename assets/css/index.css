@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+@keyframes shake {
+    10% { transform: skewY(15deg); }
+    15% { transform: skewY(-15deg); }
+    20% { transform: skewY(15deg); }
+    25% { transform: skewY(0deg); }
+}
+
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title {
+    color: rgb(182, 203, 188);
+    font-style: italic;
+    font-size: 130px;
+    text-shadow: 1px 2px 15px #000000;
+    font-family: Pirata One;
+    letter-spacing: 6px;
+
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.button {
+    color: rgb(182, 203, 188);
+    font-size: 40px;
+    font-family: Pirata One;
+    letter-spacing: 3px;
+    font-style: italic;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #444841;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform 0.5s;
+    margin-right: 15px;
+}
+
+.button:hover {
+    transform:scale(1.15);
+    background-color: #444841;
+    color: #0c0c0b;
+}
+
+.button:active {
+    border: 2px solid rgb(62, 62, 57);
+    background-color: rgb(62, 62, 57);
+    color: rgb(182, 203, 188);
+}
